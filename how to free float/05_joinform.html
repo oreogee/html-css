@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>(1일차)실습 회원가입</title>
+    <link rel="stylesheet" href="css/05_joinform.css">
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>회원가입</h1>
+      <form action="#" method="get">
+        <fieldset>
+            <legend class="blind">회원가입</legend>
+            <div class="form">
+            <div class="form_left">
+              <div class="pic"></div>
+              <div class="pic_bottom">
+                  <input type="file" class="btn_hidden" id="file">
+                  <label for="file">
+                      <span class="btn_add"></span>
+                  </label>
+              </div>
+            </div>
+            <div class="form_right">
+              <dl class="info">
+                <dt><label for="name">성명</label><em>*(필수 항목)</em></dt>
+                <dd><input class="long_text" id="name" name="name" type="text"></dd>
+                <dt><label for="nick_name">별명</label><em>*(필수 항목)</em></dt>
+                <dd><input class="long_text" id="nick_name" name="nick_name" type="text"></dd>
+                <dt><label for="psw">패스워드</label><em>*(필수 항목)</em></dt>
+                <dd><input class="long_text" id="psw" name="psw" type="password"></dd>
+                <dt><label for="psw_chk">패스워드 확인</label><em>*(필수 항목)</em></dt>
+                <dd><input class="long_text" id="psw_chk" name="psw_chk" type="password"></dd>
+                <dt><label for="email1">이메일</label><em>*(필수 항목)</em></dt>
+                <dd><input class="long_text" style="width:140px;" id="email1" name="email1" type="text"> @
+                    <select class="select_box" name="email2">
+                      <option>naver.com</option>
+                      <option>daum.net</option>
+                      <option>nate.com</option>
+                    </select>
+                </dd>
+                <dt>이메일 공개/비공개</dt>
+                <dd>
+                  <div class="radio_box">
+                    &nbsp;&nbsp;<input type="radio" id="email_open1" name="email_open" value="public"><label for="email_open1">공개</label>
+                    <input type="radio" id="email_open2" name="email_open" value="private"><label for="email_open2">비공개</label>
+                  </div>
+                </dd>
+                <dt>취미</dt>
+                <dd>
+                  <div class="radio_box">
+                    &nbsp;&nbsp;<input type="checkbox" id="hobby1" name="hobby" value="reading"><label for="hobby1">독서</label>
+                    <input type="checkbox" id="hobby2" name="hobby" value="movie"><label for="hobby2">영화</label>
+                    <input type="checkbox" id="hobby3" name="hobby" value="sports"><label for="hobby3">운동</label>
+                    <input type="checkbox" id="hobby4" name="hobby" value="travel"><label for="hobby4">여행</label>
+                    <input type="checkbox" id="hobby5" name="hobby" value="shopping"><label for="hobby5">쇼핑</label>
+                    <input type="checkbox" id="hobby6" name="hobby" value="weekendfarm"><label for="hobby6">주말농장</label>
+                  </div>
+                </dd>
+              </dl>
+          </div>
+        </div>
+        </fieldset>
+        <div class="form_bottom">
+          <button class="btn submit" type="submit">등록하기</button>
+          <button class="btn cancel" type="submit">취소하기</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
